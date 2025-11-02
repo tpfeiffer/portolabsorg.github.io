@@ -26,7 +26,10 @@ header.site-header {
   padding: 0.75rem 0;
 }
 
-header .logo img { height: 32px; }
+header .logo img {
+  height: 89px;
+  margin-left: 2rem; /* Adjust alignment to the right */
+}
 
 nav ul { list-style: none; display: flex; gap: 1.5rem; }
 
@@ -50,7 +53,7 @@ nav ul { list-style: none; display: flex; gap: 1.5rem; }
 .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
 .hero p { font-size: 1.25rem; margin-bottom: 2rem; }
 .btn, .btn-sm {
-  background: #0056ff;
+  background: rgb(21, 55, 62); /* Updated button color */
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -58,7 +61,7 @@ nav ul { list-style: none; display: flex; gap: 1.5rem; }
 }
 .btn-sm { padding: 0.4rem 1rem; font-size: 0.9rem; }
 
-section { padding: 3rem 0; }
+section { padding: 0rem 0; }
 h2 { font-size: 1.8rem; margin-bottom: 1.5rem; }
 
 .grid {
@@ -131,7 +134,8 @@ footer .social a { margin: 0 0.5rem; color: #0056ff; }
 
 
 .project-page img.project-hero {
-  width: 100%;
+  width: 65px;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
@@ -182,4 +186,25 @@ footer .social a { margin: 0 0.5rem; color: #0056ff; }
   margin-top: 0.5rem;
   font-size: 0.9rem;
   text-decoration: underline;
+}
+
+.project-page .content {
+  margin-bottom: 2rem;
+}
+
+.project-page .btn {
+  margin-top: 1rem;
+}
+
+ul {
+  padding-left: 1.5em;
+  margin-bottom: 1em;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 300px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Add rounded corners */
+  margin-bottom: 1rem; /* Add spacing below the image */
 }

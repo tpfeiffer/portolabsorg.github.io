@@ -1,4 +1,7 @@
 <div class="card project">
+  {% if include.project.image %}
+    <img src="{{ include.project.image }}" alt="{{ include.project.name }}" class="project-image">
+  {% endif %}
   <h3>{{ include.project.name }}</h3>
   <p>{{ include.project.description }}</p>
   {% if include.project.link %}

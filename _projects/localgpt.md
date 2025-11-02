@@ -9,7 +9,8 @@ link: https://github.com/portolabs/localgpt
 LocalGPT is PortoLabs’ flagship project for local-first language modeling.  
 It’s a fully self-contained stack that runs without any external API calls, offering **complete data sovereignty**.
 
-Features:
+Features
+
 - Runs on modest hardware
 - Open-weight models
 - Integrations for local retrieval

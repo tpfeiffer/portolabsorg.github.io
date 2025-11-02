@@ -4,15 +4,19 @@ layout: default
 
 <article class="project-page">
   <div class="container">
-    <h1>{{ page.title }}</h1>
-
-    {% if page.image %}
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-hero">
-    {% endif %}
-
-    {% if page.summary %}
-      <p class="summary">{{ page.summary }}</p>
-    {% endif %}
+    <div class="header" style="display: flex; align-items: stretch; gap: 1.5rem;">
+      {% if page.image %}
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-hero">
+      {% endif %}
+      <div style="display: flex; flex-direction: column; margin-top: auto;">
+        <h1>{{ page.title }}</h1>
+        {% if page.summary %}
+          <p class="summary" style="font-size: 1.1rem; color: #555; margin-bottom: 1.5rem;">
+            {{ page.summary }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
 
     <div class="content">
       {{ content }}
